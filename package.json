@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha && ./node_modules/.bin/mocha usage-tests",
     "build": "./node_modules/.bin/babel src --out-dir lib",
-    "prepublish": "./node_modules/.bin/babel src --out-dir lib"
+    "prepublish": "./node_modules/.bin/babel src --out-dir lib",
+    "prepare": "npm run build"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
